@@ -1,0 +1,24 @@
+<div class="modal fade" id="citaModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar Cita</h5>
+            </div>
+            <div class="modal-body">
+                <label>ID Paciente:</label>
+                <input type="number" id="citaPacienteId" class="form-control">
+                <label>ID Médico:</label>
+                <input type="number" id="citaMedicoId" class="form-control">
+                <label>ID Consultorio:</label>
+                <input type="number" id="citaConsultorioId" class="form-control">
+                <label>Fecha:</label>
+                <input type="date" id="citaFecha" class="form-control">
+                <label>Hora:</label>
+                <input type="time" id="citaHora" class="form-control">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="crearCita()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

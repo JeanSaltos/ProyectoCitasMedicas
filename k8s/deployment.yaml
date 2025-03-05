@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backcitas
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backcitas
+  template:
+    metadata:
+      labels:
+        app: backcitas
+    spec:
+      containers:
+      - name: backcitas
+        image: jmsaltos1/backcitas:latest
+        ports:
+        - containerPort: 80
